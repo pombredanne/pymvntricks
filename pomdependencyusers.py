@@ -51,6 +51,7 @@ def parsepom(filename,deps,verbose):
 			depending=[]
 		depending.append(project)
 		deps[fulldep]=depending
+	pom.xpathFreeContext()
 	doc.freeDoc()
 	return
 def main():
